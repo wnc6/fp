@@ -1,12 +1,12 @@
 # Learning to Interpret Chest X-ray Images from Free-text Radiology Reports
 
-### Exploratory Data Analysis (eda folder)
+### Exploratory Data Analysis
 > Install the kernelspec to be used in jupyter notebook
 ```
 poetry run python -m ipykernel install --user --display-name "eda"
 ```
 
-### MI Maximisation (mi_maximisation folder)
+### Mutual Information Maximisation
 > Set up the conda environment
 ```
 conda env create -f conda_environment.yml
@@ -16,7 +16,7 @@ conda env create -f conda_environment.yml
 python training.py
 ```
 
-### Pre-training Strategies (files in root folder)
+### Pre-training Strategies
 > Train the CNN
 ```
 python im2text_matching.py --lr 1e-4 --cv_dir {path} --batch_size 128 --train_csv {path} --val_csv {path}
